@@ -12,6 +12,10 @@ const state = {
     button: false,
     text: 'Initial Text',
   },
+  opt3: {
+    button: false,
+    text: 'Initial Text',
+  },
 };
 
 const mutations = {
@@ -27,6 +31,13 @@ const mutations = {
   },
   OPT2_TEXT_SET({ opt2 }, val) {
     opt2.text = val;
+  },
+
+  OPT3_BUTTON_SET({ opt3 }, val) {
+    opt3.button = val;
+  },
+  OPT3_TEXT_SET({ opt3 }, val) {
+    opt3.text = val;
   },
 };
 

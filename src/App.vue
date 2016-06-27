@@ -5,6 +5,9 @@
 
     <h1>Option 2</h1>
     <opt2-wrapper></opt2-wrapper>
+
+    <h1>Option 3</h1>
+    <opt3-wrapper></opt3-wrapper>
   </div>
 </template>
 
@@ -12,6 +15,7 @@
 
   import Opt1Wrapper from './Opt1Wrapper.vue';
   import Opt2Wrapper from './Opt2Wrapper.vue';
+  import Opt3Wrapper from './Opt3Wrapper.vue';
 
   import store from './vuex/store';
 
@@ -23,6 +27,7 @@
       components: {
           Opt1Wrapper,
           Opt2Wrapper,
+          Opt3Wrapper,
       },
       store,
   }
