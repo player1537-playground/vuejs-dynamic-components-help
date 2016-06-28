@@ -24,3 +24,13 @@ export function setOpt3Button({ dispatch }, val) {
 export function setOpt3Text({ dispatch }, val) {
   dispatch('OPT3_TEXT_SET', val);
 }
+
+
+export function setOpt4({ dispatch }, e) {
+  var text = e.target.value.text,
+      button = e.target.value.button;
+
+  var newText = text.toUpperCase();
+
+  dispatch('SET_OPT4', { text: newText, button });
+}

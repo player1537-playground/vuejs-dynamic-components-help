@@ -24,3 +24,8 @@ export function getOpt3Button({ opt3 }) {
 export function getOpt3Text({ opt3 }) {
   return opt3.text;
 }
+
+
+export function getOpt4({ opt4 }) {
+  return opt4;
+}
