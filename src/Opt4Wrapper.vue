@@ -2,7 +2,7 @@
   <div>
     <opt4-component
        :value="{ text: opt4.text, button: opt4.button }"
-       @input="proxy.apply(this, $arguments) | debounce"
+       @input="setOpt4.apply(this, $arguments) | debounce"
        ></opt4-component>
   </div>
 </template>
@@ -22,12 +22,6 @@
           },
           actions: {
               setOpt4,
-          },
-      },
-      methods: {
-          proxy(_) {
-              console.log('in proxy', arguments, this);
-              this.setOpt4(_);
           },
       },
       components: {

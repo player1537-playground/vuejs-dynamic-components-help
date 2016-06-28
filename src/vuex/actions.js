@@ -30,7 +30,9 @@ export function setOpt4({ dispatch }, e) {
   var text = e.target.value.text,
       button = e.target.value.button;
 
-  var newText = text.toUpperCase();
+  if (text.length % 2 == 0) {
+    button = true;
+  }
 
-  dispatch('SET_OPT4', { text: newText, button });
+  dispatch('SET_OPT4', { text, button });
 }

@@ -3,12 +3,12 @@
     <input
        type="text"
        @input.stop.prevent="updateText"
-       :value="value.text"
+       v-model="value.text"
        ></input>
     <input
        type="checkbox"
        @change.stop.prevent="updateButton"
-       :value="value.button"
+       v-model="value.button"
        ></input>
   </div>
 </template>
